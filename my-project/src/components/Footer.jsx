@@ -6,7 +6,7 @@ const Footer = () => {
             <p className="text-lg font-medium tracking-wide">
                 &copy; 2024 <span className="font-extrabold text-teal-400">My School</span>. All Rights Reserved.
             </p>
-            <p className="text-sm mt-2">Designed and developed by Your School Team</p>
+            <p className="text-sm mt-2">Designed and developed by Sri</p>
         </footer>
     );
 };

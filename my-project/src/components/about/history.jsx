@@ -24,6 +24,45 @@ const History = () => {
                     </p>
                 </div>
 
+                {/* Team Members Section */}
+                <div className="mt-16">
+                    <h3 className="text-3xl font-extrabold text-blue-700 mb-6 font-[Poppins]">Our Leaders</h3>
+                    <div className="flex justify-center space-x-8">
+                        {/* Founder Image */}
+                        <div className="text-center">
+                            <img
+                                src="/src/assets/images/founderer.jpg"  // Update with the actual path to the founder's image
+                                alt="Founder"
+                                className="w-[250px] h-[250px] rounded-full shadow-lg mb-4 mx-auto"
+                            />
+                            <p className="font-semibold text-xl text-gray-800">Founder</p>
+                            <p className="text-lg text-gray-600">Dr. Anil Sharma</p> {/* Update with actual founder's name */}
+                        </div>
+                        {/* Director Image */}
+                        <div className="text-center">
+                            <img
+                                src="/src/assets/images/director.jpg"  // Update with the actual path to the director's image
+                                alt="Director"
+                                className="w-[250px] h-[250px] rounded-full shadow-lg mb-4 mx-auto"
+                            />
+                            <p className="font-semibold text-xl text-gray-800">Director</p>
+                            <p className="text-lg text-gray-600">Prof. Mahendra Kejriwal</p> {/* Update with actual director's name */}
+                        </div>
+                        {/* Principal Image */}
+                        <div className="text-center">
+                            <img
+                                src="/src/assets/images/principal.jpg"  // Update with the actual path to the principal's image
+                                alt="Principal"
+                                className="w-[250px] h-[250px] rounded-full shadow-lg mb-4 mx-auto"
+                            />
+                            <p className="font-semibold text-xl text-gray-800">Principal</p>
+                            <p className="text-lg text-gray-600">Mrs. Smita Arora</p> {/* Update with actual principal's name */}
+                        </div>
+
+
+                    </div>
+                </div>
+
                 {/* Decorative Line */}
                 <div className="mt-12">
                     <div className="h-1 w-24 mx-auto bg-yellow-500 rounded-full animate-bounce"></div>

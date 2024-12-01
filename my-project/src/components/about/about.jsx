@@ -1,7 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
+    const [popupImage, setPopupImage] = useState(null);
+
+    // Handle popup open and close
+    const handleImageClick = (image) => setPopupImage(image);
+    const closePopup = () => setPopupImage(null);
+
     return (
         <section
             id="about"
@@ -14,51 +20,78 @@ const About = () => {
 
             {/* Content */}
             <div className="container mx-auto text-center relative z-10 px-6">
-                <h2 className="text-6xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-[fadeIn_1s_ease-in] font-display">
+                <h2 className="text-6xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-[fadeInDown_1s_ease-in-out] font-display">
                     Discover <span className="text-yellow-500">Our Story</span>
                 </h2>
-                <p className="text-xl md:text-2xl text-gray-800 max-w-4xl mx-auto mb-12 animate-[slideIn_1s_ease-in-out] font-body">
-                    Our school is a place where knowledge meets creativity, and dreams take flight. Join us as we shape a brighter, more colorful future for every student.
+                <p className="text-xl md:text-2xl text-gray-800 max-w-4xl mx-auto mb-12 animate-[fadeInUp_1.2s_ease-in-out] font-body">
+                    Our school is where knowledge meets creativity, inspiring students to dream big and achieve more.
                 </p>
 
-                <p className="text-xl md:text-2xl text-gray-800 max-w-4xl mx-auto mb-12 animate-[slideIn_1s_ease-in-out] font-body">
-                    At our school, we believe in nurturing the potential of every child. Our curriculum blends academics with creativity, fostering an environment where children are encouraged to explore, innovate, and grow.
-                </p>
+                {/* Images Section */}
+                <div className="flex justify-center space-x-6 mt-10 animate-[fadeIn_1.5s_ease-in-out]">
+                    <img
+                        src="/src/assets/images/awards.jpg"
+                        alt="Awards"
+                        className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
+                        onClick={() => handleImageClick('/src/assets/images/awards.jpg')}
+                    />
+                    <img
+                        src="/src/assets/images/assembly.jpg"
+                        alt="Assembly"
+                        className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
+                        onClick={() => handleImageClick('/src/assets/images/assembly.jpg')}
+                    />
+                    <img
+                        src="/src/assets/images/extracuricular.jpg"
+                        alt="Extracurricular"
+                        className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
+                        onClick={() => handleImageClick('/src/assets/images/extracuricular.jpg')}
+                    />
+                </div>
 
-                <p className="text-xl md:text-2xl text-gray-800 max-w-4xl mx-auto mb-12 animate-[slideIn_1s_ease-in-out] font-body">
-                    With a dedicated team of educators, modern facilities, and a holistic approach to learning, we strive to empower our students to become well-rounded individuals, prepared for the challenges of tomorrow.
-                </p>
-
-                <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                {/* Call-to-Action Buttons */}
+                <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 mt-12 animate-[fadeInUp_1.8s_ease-in-out]">
                     <Link
                         to="/about/history"
-                        className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-[zoomIn_0.8s_ease-out] font-display"
+                        className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-display"
                     >
                         Our History
                     </Link>
                     <Link
                         to="/about/mission"
-                        className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-[zoomIn_1s_ease-out_delay-300ms] font-display"
+                        className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-display"
                     >
                         Our Mission
                     </Link>
                     <Link
                         to="/about/vision"
-                        className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-teal-400 to-green-500 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-[zoomIn_1.2s_ease-out_delay-600ms] font-display"
+                        className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-teal-400 to-green-500 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-display"
                     >
                         Our Vision
                     </Link>
                 </div>
-
-                {/* Additional Paragraphs */}
-                <p className="text-xl md:text-2xl text-gray-800 max-w-4xl mx-auto mt-12 mb-12 animate-[slideIn_1s_ease-in-out] font-body">
-                    We offer a variety of extracurricular activities, including sports, arts, and leadership programs, to help students develop skills outside of the classroom. These activities foster teamwork, discipline, and creativity.
-                </p>
-
-                <p className="text-xl md:text-2xl text-gray-800 max-w-4xl mx-auto mt-12 mb-12 animate-[slideIn_1s_ease-in-out] font-body">
-                    Our school community is inclusive, vibrant, and diverse, bringing together students from different backgrounds to create an environment where everyone can thrive.
-                </p>
             </div>
+
+            {/* Popup Image Overlay */}
+            {popupImage && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 animate-[fadeIn_0.5s_ease-in-out]"
+                    onClick={closePopup}
+                >
+                    <img
+                        src={popupImage}
+                        alt="Popup"
+                        className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking on the image
+                    />
+                    <button
+                        className="absolute top-5 right-5 text-white text-3xl font-bold"
+                        onClick={closePopup}
+                    >
+                        &times;
+                    </button>
+                </div>
+            )}
         </section>
     );
 };
