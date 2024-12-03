@@ -13,6 +13,8 @@ import Withdrawal from './components/Admission/withdrawal'; // Import Withdrawal
 import Infrastructure from './components/Infrastructure/infrastructure';
 import Notices from './components/Notices/Notices';
 import Footer from './components/Footer';
+import Login from './components/login';
+import Signup from './components/signUp';
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const App = () => {
           <Route path="/admission/withdrawal" element={<Withdrawal />} /> {/* Add Withdrawal Route */}
           <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/notices" element={<Notices />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
 
         </Routes>
         <Footer />

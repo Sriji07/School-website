@@ -43,19 +43,21 @@ const Registration = () => {
     return (
         <section
             id="registration"
-            className="min-h-screen bg-gradient-to-r from-green-300 via-blue-300 to-green-400 flex items-center justify-center px-6 py-16"
+            className="min-h-screen bg-cover bg-center relative"
+            style={{ backgroundImage: 'url(/src/assets/images/registration.jpg)' }}
         >
-            <div className="container mx-auto">
+            <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
+            <div className="container mx-auto relative z-10">
                 {/* Headline with adjusted padding */}
-                <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-blue-600 to-green-700 mb-4 py-4 text-center animate__animated animate__fadeIn animate__delay-1s">
+                <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-blue-600 to-green-700 mb-4 py-4 text-center animate__animated animate__fadeIn animate__delay-1.5s">
                     Registration Form
                 </h2>
 
                 <form
-                    className="bg-white bg-opacity-40 backdrop-blur-lg shadow-lg rounded-lg px-8 pt-6 pb-8 max-w-lg mx-auto animate__animated animate__fadeIn animate__delay-1.5s"
+                    className="bg-white bg-opacity-40 backdrop-blur-lg shadow-lg rounded-lg px-8 pt-6 pb-8 max-w-lg mx-auto animate__animated animate__fadeIn animate__delay-1s"
                     onSubmit={handleSubmit}
                 >
-                    {/* Name Input */}
+                    {/* Full Name Input */}
                     <div className="mb-6">
                         <label
                             className="block text-gray-700 text-lg font-medium mb-2"
@@ -112,6 +114,8 @@ const Registration = () => {
                             placeholder="Enter your phone number"
                             required
                             className="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300 ease-in-out"
+                            pattern="^[+]?[0-9]{1,3}[.-]?[0-9]+$"
+                            title="Phone number should be valid"
                         />
                     </div>
 
@@ -191,6 +195,8 @@ const Registration = () => {
                             placeholder="Enter parent/guardian's phone number"
                             required
                             className="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300 ease-in-out"
+                            pattern="^[+]?[0-9]{1,3}[.-]?[0-9]+$"
+                            title="Phone number should be valid"
                         />
                     </div>
 

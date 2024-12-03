@@ -5,17 +5,18 @@ const Procedure = () => {
         <section id="procedure" className="min-h-screen bg-gradient-to-r from-pink-300 via-red-300 to-pink-400 flex items-center justify-center px-6 py-16">
             <div className="container mx-auto text-center">
                 {/* Title with gradient text */}
-                <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-red-700 to-pink-800 mb-8 tracking-wide leading-tight animate__animated animate__fadeIn animate__delay-1s">
+                <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-red-700 to-pink-800 mb-8 tracking-wide leading-tight animate__animated animate__fadeIn animate__delay-0.5s">
                     Admission Procedure
                 </h2>
 
                 {/* Introduction paragraph */}
-                <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-600 to-pink-700 max-w-3xl mx-auto mb-10 font-medium leading-relaxed animate__animated animate__fadeIn animate__delay-1.5s">
+                <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-600 to-pink-700 max-w-3xl mx-auto mb-10 font-medium leading-relaxed animate__animated animate__fadeIn animate__delay-1s">
                     Our admission process is simple and designed to help us understand the aspirations and goals of each student. Here's how you can apply:
                 </p>
 
                 {/* Step-by-step guide */}
                 <div className="space-y-12 max-w-3xl mx-auto text-left">
+                    {/* Step 1 */}
                     <div className="flex items-start space-x-6 animate__animated animate__fadeIn animate__delay-1s">
                         <div className="bg-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
                             1
@@ -28,6 +29,7 @@ const Procedure = () => {
                         </div>
                     </div>
 
+                    {/* Step 2 */}
                     <div className="flex items-start space-x-6 animate__animated animate__fadeIn animate__delay-2s">
                         <div className="bg-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
                             2
@@ -40,6 +42,7 @@ const Procedure = () => {
                         </div>
                     </div>
 
+                    {/* Step 3 */}
                     <div className="flex items-start space-x-6 animate__animated animate__fadeIn animate__delay-3s">
                         <div className="bg-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
                             3
@@ -52,6 +55,7 @@ const Procedure = () => {
                         </div>
                     </div>
 
+                    {/* Step 4 */}
                     <div className="flex items-start space-x-6 animate__animated animate__fadeIn animate__delay-4s">
                         <div className="bg-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
                             4
@@ -64,6 +68,7 @@ const Procedure = () => {
                         </div>
                     </div>
 
+                    {/* Step 5 */}
                     <div className="flex items-start space-x-6 animate__animated animate__fadeIn animate__delay-5s">
                         <div className="bg-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
                             5

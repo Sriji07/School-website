@@ -4,32 +4,32 @@ const Infrastructure = () => {
     const infrastructureData = [
         {
             title: 'Reception',
-            image: 'https://via.placeholder.com/300', // Replace with actual image URL
+            image: '/src/assets/images/infrastructure/reception.jpg', // Replace with actual image URL
             description: 'A welcoming reception area where students and visitors are greeted.',
         },
         {
             title: 'Classroom',
-            image: 'https://via.placeholder.com/300', // Replace with actual image URL
+            image: '/src/assets/images/infrastructure/classroom.jpg', // Replace with actual image URL
             description: 'Modern classrooms with smart boards and comfortable seating.',
         },
         {
             title: 'Labs',
-            image: 'https://via.placeholder.com/300', // Replace with actual image URL
+            image: '/src/assets/images/infrastructure/lab.jpg', // Replace with actual image URL
             description: 'Fully equipped science and computer labs for hands-on learning.',
         },
         {
             title: 'Library',
-            image: 'https://via.placeholder.com/300', // Replace with actual image URL
+            image: '/src/assets/images/infrastructure/library.jpg', // Replace with actual image URL
             description: 'A spacious library with a wide collection of books and resources.',
         },
         {
             title: 'Swimming Pool',
-            image: 'https://via.placeholder.com/300', // Replace with actual image URL
+            image: '/src/assets/images/infrastructure/swimming.jpg', // Replace with actual image URL
             description: 'An Olympic-size swimming pool for training and recreational activities.',
         },
         {
             title: 'Playground',
-            image: 'https://via.placeholder.com/300', // Replace with actual image URL
+            image: '/src/assets/images/infrastructure/playground.jpg', // Replace with actual image URL
             description: 'Large outdoor playgrounds for sports and physical activities.',
         },
     ];
