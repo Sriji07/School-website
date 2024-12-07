@@ -4,32 +4,32 @@ const Infrastructure = () => {
     const infrastructureData = [
         {
             title: 'Reception',
-            image: '/public/infrastructure/reception.jpg', // Replace with actual image URL
+            image: '/infrastructure/reception.jpg', // Replace with actual image URL
             description: 'A welcoming reception area where students and visitors are greeted.',
         },
         {
             title: 'Classroom',
-            image: '/public/infrastructure/classroom.jpg', // Replace with actual image URL
+            image: '/infrastructure/classroom.jpg', // Replace with actual image URL
             description: 'Modern classrooms with smart boards and comfortable seating.',
         },
         {
             title: 'Labs',
-            image: '/public/infrastructure/lab.jpg', // Replace with actual image URL
+            image: '/infrastructure/lab.jpg', // Replace with actual image URL
             description: 'Fully equipped science and computer labs for hands-on learning.',
         },
         {
             title: 'Library',
-            image: '/public/infrastructure/library.jpg', // Replace with actual image URL
+            image: '/infrastructure/library.jpg', // Replace with actual image URL
             description: 'A spacious library with a wide collection of books and resources.',
         },
         {
             title: 'Swimming Pool',
-            image: '/public/infrastructure/swimming.jpg', // Replace with actual image URL
+            image: '/infrastructure/swimming.jpg', // Replace with actual image URL
             description: 'An Olympic-size swimming pool for training and recreational activities.',
         },
         {
             title: 'Playground',
-            image: '/public/infrastructure/playground.jpg', // Replace with actual image URL
+            image: '/infrastructure/playground.jpg', // Replace with actual image URL
             description: 'Large outdoor playgrounds for sports and physical activities.',
         },
     ];
