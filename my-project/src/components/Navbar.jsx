@@ -8,7 +8,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <Link to="/" className="flex items-center">
                     <img
-                        src="/src/assets/images/logo1.png"
+                        src="/logo1.png"
                         alt="School Logo"
                         className="h-full max-h-14 object-contain" // Adjusted to scale within navbar
                     />

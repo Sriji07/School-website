@@ -4,14 +4,14 @@ const Vision = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [
-        "/src/assets/images/vision/vision1.jpg",
-        "/src/assets/images/vision/vision2.jpg",
-        "/src/assets/images/vision/vision3.jpg",
-        "/src/assets/images/vision/vision4.jpg",
-        "/src/assets/images/vision/vision5.jpg",
-        "/src/assets/images/vision/vision6.jpg",
-        "/src/assets/images/vision/vision7.jpg",
-        "/src/assets/images/vision/vision8.jpg",
+        "/vision/vision1.jpg",
+        "/vision/vision2.jpg",
+        "/vision/vision3.jpg",
+        "/vision/vision4.jpg",
+        "/vision/vision5.jpg",
+        "/vision/vision6.jpg",
+        "/vision/vision7.jpg",
+        "/vision/vision8.jpg",
     ];
 
     // Go to the next slide

@@ -30,19 +30,19 @@ const About = () => {
                 {/* Images Section */}
                 <div className="flex justify-center space-x-6 mt-10 animate-[fadeIn_1.5s_ease-in-out]">
                     <img
-                        src="/src/assets/images/awards.jpg"
+                        src="/awards.jpg"
                         alt="Awards"
                         className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
                         onClick={() => handleImageClick('/src/assets/images/awards.jpg')}
                     />
                     <img
-                        src="/src/assets/images/assembly.jpg"
+                        src="/assembly.jpg"
                         alt="Assembly"
                         className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
                         onClick={() => handleImageClick('/src/assets/images/assembly.jpg')}
                     />
                     <img
-                        src="/src/assets/images/extracuricular.jpg"
+                        src="/extracuricular.jpg"
                         alt="Extracurricular"
                         className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
                         onClick={() => handleImageClick('/src/assets/images/extracuricular.jpg')}

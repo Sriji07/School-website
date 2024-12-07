@@ -7,7 +7,7 @@ const Admission = () => {
             id="admission"
             className="h-screen bg-cover bg-center flex items-center justify-center relative"
             style={{
-                backgroundImage: 'url(/src/assets/images/admission.jpg)', // Proper format for background image URL
+                backgroundImage: 'url(/admission.jpg)', // Proper format for background image URL
             }}
         >
             {/* Dark overlay */}

@@ -4,14 +4,14 @@ const Mission = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [
-        "/src/assets/images/mission/mission1.jpg",
-        "/src/assets/images/mission/mission2.jpg",
-        "/src/assets/images/mission/mission3.jpg",
-        "/src/assets/images/mission/mission4.jpg",
-        "/src/assets/images/mission/mission5.jpg",
-        "/src/assets/images/mission/mission6.jpg",
-        "/src/assets/images/mission/mission7.jpg",
-        "/src/assets/images/mission/mission8.jpg",
+        "/mission/mission1.jpg",
+        "/mission/mission2.jpg",
+        "/mission/mission3.jpg",
+        "/mission/mission4.jpg",
+        "/mission/mission5.jpg",
+        "/mission/mission6.jpg",
+        "/mission/mission7.jpg",
+        "/mission/mission8.jpg",
     ];
 
     // Go to the next slide
@@ -82,7 +82,7 @@ const Mission = () => {
                     <button
                         onClick={nextSlide}
                         className={`absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-blue rounded-full p-3 shadow-lg transition-all duration-300 ${currentIndex === images.length - 4
-                            ? "pointer-events-none opacity-30 bg-gray-500 shadow-none"
+                            ? "pointer-events-none op00 shadow-none"
                             : "opacity-60 hover:opacity-100 bg-white-600"
                             } animate__animated animate__fadeInRight`}
                     >

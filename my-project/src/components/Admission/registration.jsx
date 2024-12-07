@@ -44,7 +44,7 @@ const Registration = () => {
         <section
             id="registration"
             className="min-h-screen bg-cover bg-center relative"
-            style={{ backgroundImage: 'url(/src/assets/images/registration.jpg)' }}
+            style={{ backgroundImage: 'url(/registration.jpg)' }}
         >
             <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
             <div className="container mx-auto relative z-10">

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import backgroundImage from '../assets/images/school.jpg'; // Adjust the path as needed
+import backgroundImage from '/school.jpg'; // Adjust the path as needed
 import { FaUserGraduate, FaBuilding, FaPalette, FaTree } from 'react-icons/fa';
 import AOS from 'aos'; // Import AOS for scroll-based animations
 import 'aos/dist/aos.css'; // Import AOS styles

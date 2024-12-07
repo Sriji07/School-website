@@ -31,7 +31,7 @@ const History = () => {
                         {/* Founder Image */}
                         <div className="text-center">
                             <img
-                                src="/src/assets/images/founderer.jpg"  // Update with the actual path to the founder's image
+                                src="/founderer.jpg"  // Update with the actual path to the founder's image
                                 alt="Founder"
                                 className="w-[250px] h-[250px] rounded-full shadow-lg mb-4 mx-auto"
                             />
@@ -41,7 +41,7 @@ const History = () => {
                         {/* Director Image */}
                         <div className="text-center">
                             <img
-                                src="/src/assets/images/director.jpg"  // Update with the actual path to the director's image
+                                src="/director.jpg"  // Update with the actual path to the director's image
                                 alt="Director"
                                 className="w-[250px] h-[250px] rounded-full shadow-lg mb-4 mx-auto"
                             />
@@ -51,7 +51,7 @@ const History = () => {
                         {/* Principal Image */}
                         <div className="text-center">
                             <img
-                                src="/src/assets/images/principal.jpg"  // Update with the actual path to the principal's image
+                                src="/principal.jpg"  // Update with the actual path to the principal's image
                                 alt="Principal"
                                 className="w-[250px] h-[250px] rounded-full shadow-lg mb-4 mx-auto"
                             />
