@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", // Scans all files in the src folder
     "./public/**/*.html", // Ensures HTML templates are scanned
-
   ],
   theme: {
     extend: {
-      // Custom colors for consistent branding
       colors: {
         teal: {
           100: "#e6fcf5",
@@ -53,9 +51,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        display: ["Poppins", "sans-serif"], // For headings
-        body: ["Roboto", "sans-serif"], // For body text
-        serif: ["Lora", "serif"], // Additional serif font
+        display: ["Poppins", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        serif: ["Lora", "serif"],
       },
       keyframes: {
         fadeIn: {
@@ -102,18 +100,16 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: "1rem", // Default padding
+        padding: "1rem",
       },
       boxShadow: {
         custom: "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06)",
       },
-
     },
-
   },
   plugins: [
-    require("@tailwindcss/forms"), // Adds better default styles for forms
-    require("@tailwindcss/aspect-ratio"), // Adds utilities for maintaining aspect ratios
-    require("@tailwindcss/typography"), // Adds utilities for better typography
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
   ],
 };
