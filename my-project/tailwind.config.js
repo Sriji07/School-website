@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import forms from '@tailwindcss/forms';
-import aspectRatio from '@tailwindcss/aspect-ratio';
-import typography from '@tailwindcss/typography';
+
 export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", // Scans all files in the src folder
@@ -111,8 +109,8 @@ export default {
     },
   },
   plugins: [
-    forms,
-    aspectRatio,
-    typography,
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
   ],
 };
