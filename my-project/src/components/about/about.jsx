@@ -33,19 +33,19 @@ const About = () => {
                         src="/awards.jpg"
                         alt="Awards"
                         className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
-                        onClick={() => handleImageClick('/src/assets/images/awards.jpg')}
+                        onClick={() => handleImageClick('/awards.jpg')}
                     />
                     <img
                         src="/assembly.jpg"
                         alt="Assembly"
                         className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
-                        onClick={() => handleImageClick('/src/assets/images/assembly.jpg')}
+                        onClick={() => handleImageClick('/assembly.jpg')}
                     />
                     <img
                         src="/extracuricular.jpg"
                         alt="Extracurricular"
                         className="w-[300px] h-[200px] rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition"
-                        onClick={() => handleImageClick('/src/assets/images/extracuricular.jpg')}
+                        onClick={() => handleImageClick('/extracuricular.jpg')}
                     />
                 </div>
 
